@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ export class AppComponent implements OnInit {
       console.log(this.radioObject.palestine)
     })
   }
-  url = "http://www.json-generator.com/api/json/get/bIpVztBRyW?indent=2";
+  url = environment.url;
+
   cities: []
   radioObject: any = ''
 
