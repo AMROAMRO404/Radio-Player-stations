@@ -1,0 +1,33 @@
+{
+    "palestine": [{
+            "cityName": "Hebron",
+            "radiosInTheCity": [
+                { "name": "Al-Horiyah", "src": "http://rs.hadara.ps:8000/;stream.mp33&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true" },
+                { "name": "Al-Khalil Radio", "src": "http://alhaneny.com:8056/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true" },
+                { "name": "Al-Rabe3a", "src": "http://radio.r4fm.ps:8044/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true" }
+            ]
+        },
+        {
+            "cityName": "Ramallah",
+            "radiosInTheCity": [
+                { "name": "Ajyal", "src": "http://icecast.mada.ps:8095/ajyalnew" },
+                { "name": "Angham", "src": "http://icecast.mada.ps:8096/anghamnew" },
+                { "name": "Tarab", "src": "http://streamer.mada.ps:8031/radioramallah" },
+                { "name": "Quranfm", "src": "http://streamer.mada.ps:8029/quranfm" }
+            ]
+        },
+        {
+            "cityName": "Nablus",
+            "radiosInTheCity": [
+                { "name": "Al-Quran Radio", "src": "http://www.quran-radio.org:8002/;stream.mp3&amp;13202692901&amp;duration=99999&amp;id=scplayer&amp;autostart=true" },
+                { "name": "Shabab FM", "src": "https://streaming.zaytonatube.com/test2.aac" }
+            ]
+        }, {
+            "cityName": "Jenin",
+            "radiosInTheCity": [
+                { "name": "Al-Balad", "src": "http://live.masterweb-ps.com:8006/;mp3" },
+                { "name": "Zain", "src": "http://zain.callu.ps:8000/live.ogg" }
+            ]
+        }
+    ]
+}
