@@ -1,0 +1,5 @@
+<h2>{{radiosInCity.cityName}} City</h2>
+<div style="padding: 20px;" *ngFor='let radio of radiosInCity.radiosInTheCity '>
+    <h5>Radio : {{radio.name}}</h5>
+    <audio style="outline: none;" type="audio/mpeg" [src]='radio.src' controls=""></audio>
+</div>

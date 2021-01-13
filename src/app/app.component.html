@@ -1,10 +1,20 @@
-<h1>Welcome to the Radio Player Stations In Palestine</h1>
-<div *ngIf='radioObject'>
-    <div *ngFor='let city of cities'>
-        <p>city name : {{city.cityName}}</p>
+<div style="padding: 50px;">
+    <h2>City Name</h2>
+    <ul class="list-group">
+        <li style="font-size: larger;" *ngFor='let city of cities' class="list-group-item">{{city.cityName}}
+            <button (click)="showTheRadioes(city)" style="float: right;" class="btn btn-success">Show radios</button>
+        </li>
+    </ul>
+</div>
+
+<div style="padding: 50px;" *ngIf='radioObject'>
+
+    <!-- <div *ngFor='let city of cities'>
+        <p>city {{city.cityName}}</p>
         <div *ngFor='let radio of city.radiosInTheCity '>
-            <p>radio : {{radio.name}}</p>
+            <h4>Radio : {{radio.name}}</h4>
             <audio style="outline: none;" type="audio/mpeg" [src]='radio.src' controls=""></audio>
         </div>
-    </div>
+    </div> -->
+    <app-radio [radiosInCity]='city'></app-radio>
 </div>

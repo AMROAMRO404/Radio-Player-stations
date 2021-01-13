@@ -21,6 +21,10 @@ export class AppComponent implements OnInit {
 
   cities: []
   radioObject: any = ''
+  city: String;
+  showTheRadioes(value: String) {
+    this.city = value
+  }
 
 
 }
