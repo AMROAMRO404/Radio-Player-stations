@@ -8,13 +8,8 @@
 </div>
 
 <div style="padding: 50px;" *ngIf='radioObject'>
+    <ng-container *ngIf='city'>
+        <app-radio [radiosInCity]='city'></app-radio>
 
-    <!-- <div *ngFor='let city of cities'>
-        <p>city {{city.cityName}}</p>
-        <div *ngFor='let radio of city.radiosInTheCity '>
-            <h4>Radio : {{radio.name}}</h4>
-            <audio style="outline: none;" type="audio/mpeg" [src]='radio.src' controls=""></audio>
-        </div>
-    </div> -->
-    <app-radio [radiosInCity]='city'></app-radio>
+    </ng-container>
 </div>
