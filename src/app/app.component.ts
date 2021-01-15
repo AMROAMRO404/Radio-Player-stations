@@ -23,8 +23,7 @@ export class AppComponent implements OnInit {
   radioObject: any = ''
   city: String;
   showTheRadioes(value: String) {
-    if (value)
-      this.city = value
+    this.city = value
   }
 
 
