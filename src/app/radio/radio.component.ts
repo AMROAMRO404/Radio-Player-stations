@@ -3,14 +3,11 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-radio',
   templateUrl: './radio.component.html',
-  styleUrls: ['./radio.component.css']
+  styleUrls: ['./radio.component.css'],
 })
 export class RadioComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  @Input() radiosInCity
-
+  ngOnInit(): void {}
+  @Input() radiosInCityObject;
 }

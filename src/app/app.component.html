@@ -1,14 +1,12 @@
 <div style="padding: 50px;">
     <h2>City Name</h2>
     <ul class="list-group">
-        <li style="font-size: larger;" *ngFor='let city of cities' class="list-group-item">{{city.cityName}}
-            <button (click)="showTheRadioes(city)" style="float: right;" class="btn btn-success">Show radios</button>
+        <li *ngFor='let city of cities' class="list-group-item">{{city.cityName}}
+            <button id='show-radios' (click)="radiosCity(city)" class="btn btn-success">Show radios</button>
         </li>
     </ul>
 </div>
 
-<div style="padding: 50px;" *ngIf='radioObject'>
-    <ng-container *ngIf='city'>
-        <app-radio [radiosInCity]='city'></app-radio>
-    </ng-container>
+<div style="padding: 50px;" *ngIf='city'>
+    <app-radio [radiosInCityObject]='city'></app-radio>
 </div>
