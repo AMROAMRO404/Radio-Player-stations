@@ -11,7 +11,8 @@ export class AppComponent implements OnInit {
   constructor(private httpService: HttpService) {}
   cities: any;
   countryObject: any;
-
+  selectedCity: any;
+  selected: number = 1;
   ngOnInit(): void {
     this.httpService.getCities().subscribe((data) => {
       this.countryObject = data;
@@ -19,8 +20,12 @@ export class AppComponent implements OnInit {
     });
   }
 
-  city: String;
-  radiosCity(value: String) {
-    this.city = value;
+  city: any;
+  radiosCity(event: any) {
+    for (let i = 0; i < this.cities.length; i++) {
+      if (event.target.value == this.cities[i].cityName) {
+        this.city = this.cities[i];
+      }
+    }
   }
 }

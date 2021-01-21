@@ -1,12 +1,17 @@
-<div style="padding: 50px;">
+<!-- <div style="padding: 50px;">
     <h2>City Name</h2>
     <ul class="list-group">
         <li *ngFor='let city of cities' class="list-group-item">{{city.cityName}}
             <button id='show-radios' (click)="radiosCity(city)" class="btn btn-success">Show radios</button>
         </li>
     </ul>
-</div>
-
-<div style="padding: 50px;" *ngIf='city'>
-    <app-radio [radiosInCityObject]='city'></app-radio>
+</div> -->
+<div style="padding: 50px;" class="form-group">
+    <h2>Palestine cities</h2>
+    <select (change)='radiosCity($event)' class="form-control">
+        <option *ngFor='let city of cities' class="list-group-item" value="{{city.cityName}}">{{city.cityName}}</option>
+    </select>
+    <div style="padding: 30px;" *ngIf='city'>
+        <app-radio [radiosInCityObject]='city'></app-radio>
+    </div>
 </div>

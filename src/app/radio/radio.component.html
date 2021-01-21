@@ -1,5 +1,10 @@
 <h2>{{radiosInCityObject.cityName}} City</h2>
-<div id='radios' *ngFor='let radio of radiosInCityObject.radiosInTheCity '>
+<div id='radios' *ngFor='let radio of radiosInCityObject.radiosInTheCity'>
     <h5>Radio : {{radio.name}}</h5>
     <audio type="audio/mpeg" [src]='radio.src' controls=""></audio>
+    <!-- <button *ngFor="let mycity of cities" type="button" class="btn btn-outline-secondary">{{mycity}}</button>
+    <button (click)='play(radio.src)' class="button button5">play</button>
+    <button (click)='pause()' class="button button5">stop</button> -->
+</div>
+<div>
 </div>
